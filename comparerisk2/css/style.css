@@ -1,0 +1,28 @@
+
+body{margin:0;padding:0}
+.main-container{background:url(../images/background.png) no-repeat;width:435px;height:220px;margin:50px auto 0;position:relative;padding-top:10px}
+.main-container .circle{margin:0 auto;width:203px;height:202px;z-index:1;position:relative}
+.btn-block{position:absolute;width:100%;bottom:42%}
+.btn-block div{display:inline-block;background:#fff;font-size:12px;padding:5px 16px;border:2px solid #cee1e8;position:relative}
+.btn-block .rgt-btn{float:right;margin-right:9px;padding-right:10px}
+.btn-block .left-btn{margin-left:9px;padding-left:10px}
+.btn-block div span{position:absolute;z-index:5;display:none}
+.btn-block .rgt-btn span{left:-64px;top:-6px}
+.btn-block .left-btn span{right:-58px;top:-3px}
+@media (max-width: 330px) {
+    body .main-container{padding-top: 8vh}
+}
+@media (max-width: 480px) {
+    .main-container{width:100%;padding-top:3.5vh}
+    .main-container .circle{width:50%;height:auto}
+    .main-container .circle img{width:100%;height:auto}
+    .btn-block div{width:22vw}
+    .btn-block .left-btn{text-align: left; margin:0}
+    .btn-block .rgt-btn{margin:0; text-align: right}
+    .btn-block .rgt-btn span img{width:24vw;height:auto}
+    .btn-block .left-btn span img{width:22vw;height:auto}
+    .btn-block .rgt-btn span,.btn-block .left-btn span{top:50%;transform:translate(0,-50%)}
+    .btn-block .left-btn span{right: -48px}
+    .btn-block .rgt-btn span{left: -58px}
+    .btn-block{bottom: 38%} 
+}

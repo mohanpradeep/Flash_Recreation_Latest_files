@@ -1,0 +1,52 @@
+* {font-family: Arial, Helvetica, sans-serif}
+.draggableParent,.droppableParent{float:left}
+.draggableParent{width:435px;margin-bottom:15px;position:relative;height: 50px;}
+.like{margin:0 auto;width:450px}
+.text-block{margin:0;padding:0;position:absolute;top:0}
+.text-block li{list-style:none;font-size:8px;float:left;width:103px;color:#a4c9ed;border:#d6e6ec solid 1px;background-color:#f5fafd;text-align:center;vertical-align:middle;margin:1.8px;z-index:999;height:22.5px;line-height:25px}
+.draggableParent div{color:#5b5b5b;background:#d6e6ec;text-indent: 5px;vertical-align:middle;margin:1.8px;z-index:999;font-size:8px;cursor:pointer;float:left;width:105px;height:24px;line-height:25px}
+#risks-block{position:relative;clear:both;margin:0;padding:0;width:435px;height:270px}
+#risks-block .right-block{position:absolute;top:.4px;right:121px}
+#risks-block .right-block div{position:absolute;width:112px;height:24px;background-color:transparent;font-size:0}
+#risks-block .right-block div.heart{top:11px}
+#risks-block .right-block div.cancer{top:41px}
+#risks-block .right-block div.suicide{top:71px}
+#risks-block .right-block div.motor{top:101px}
+#risks-block .right-block div.falling{top:131px}
+#risks-block .right-block div.firearm{top:161px}
+#risks-block .right-block div.drowning{top:191px}
+#risks-block .right-block div.air{top:221px}
+#risks-block .right-block div.hello{z-index:9999;font-size:8.5px;line-height:25px;text-indent:4px}
+#risks-block .right-block div.heart.hello{background-color:#b50000;color:#fff}
+#risks-block .right-block div.cancer.hello{background-color:#ff9e00;color:#fff}
+#risks-block .right-block div.motor.hello{background-color:#ff0;color:#000}
+#risks-block .right-block div.suicide.hello{background-color:#63cf00;color:#fff}
+#risks-block .right-block div.falling.hello{background-color:#009e00;color:#fff}
+#risks-block .right-block div.hello{background-color:#00d3ff;color:#fff}
+#risks-block .right-block div.drowning.hello{background-color:#6300ff;color:#fff}
+#risks-block .right-block div.air.hello{background-color:#d604ff;color:#fff}
+@media (max-width: 330px){
+    body #risks-block .right-block div.air {top: 48.5vmin}
+    body #risks-block .right-block div.drowning {top: 41.9vmin}
+    body #risks-block .right-block div.firearm {top: 35.3vmin}
+    body #risks-block .right-block div.falling {top: 28.8vmin}
+}
+@media (max-width: 480px){
+    .like,#risks-block{width:100%}
+    .draggableParent{width:100%}
+    .text-block li{width:23%;font-size:5.5px;box-sizing: content-box}
+    .draggableParent div{width:23.52%;font-size:5.5px;text-indent: 5px}
+    #risks-block .left-blocK img{width:100%}
+    #risks-block .right-block div.hello{font-size:6px;line-height:17px;text-indent:5px}
+    #risks-block .right-block div{width:24.8vw;height:3vh;}
+    #risks-block .right-block{right:28%;top:0}
+    #risks-block .right-block div.heart{top:2.5vmin}
+    #risks-block .right-block div.cancer{top:9vmin}
+    #risks-block .right-block div.suicide{top:15.6vmin}
+    #risks-block .right-block div.motor{top:22.5vmin}
+    #risks-block .right-block div.falling{top:29.1vmin}
+    #risks-block .right-block div.drowning{top:42.3vmin}
+    #risks-block .right-block div.firearm{top: 35.8vmin}
+    #risks-block .right-block div.air{top:49vmin}
+    .text-block{top:-1px;width: 100%}
+}
